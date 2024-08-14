@@ -1,0 +1,63 @@
+/*  1. display flex
+    2. flex direction
+    3. flex wrap
+    4. flex-flow: row, wrap
+    5.justify-content 
+    6.aling-items
+    7.aling-content
+
+    8.order:1
+    9.flex grow: 1
+    10. flex-basis:
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: beige;
+  border: solid 1px black;
+  margin: 15px;
+  padding: 15px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap row;
+  align-content: center;
+  gap: 20px;
+}
+.container_box {
+  background-color: aquamarine;
+  border: solid 1px black;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c1 {
+  background-color: lightblue;
+  order: 3;
+  /* flex-grow: 5; */
+  flex-basis: 50%;
+}
+
+.c2 {
+  background-color: lightcoral;
+  order: 2;
+  /* flex-grow: 1; */
+  flex-basis: 20%;
+}
+
+.c3 {
+  background-color: lightgreen;
+  order: 1;
+  /* flex-grow: 2; */
+  flex-basis: 20%;
+}
